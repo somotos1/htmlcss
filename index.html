@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-D/7uAka7uwterkSxa2LwZR7RJqH2X6jfmhkJ0vFPGUtPyBMF2WMq9S+f9Ik5jJu1" crossorigin="anonymous" media="screen"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Summary: Latitude vs. X</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top bg-info text-white navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">Latitude: Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav" style>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="max_temp.html">Max Temp</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="weather_data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="row">
+            <div class="col-md-7">
+                <br/>
+                <article class="description-content jumbotron">
+                    <h1 class="description-header text-info">Summary: Latitude vs. X</h1>
+                    <hr class="description-hr" />
+                    <img class="home-img img-fluid" src="/Users/stephaniefaderin/Desktop/GW_Data_Bootcamp/APIs/python_apis/City_Latitudes_vs_Max_Temp.png"
+                        alt="Latitudes vs. Max Temp">
+                    <p class="text-justify">The purpose of this project was to analyze how the weather changes as you get
+                        closer to the equator. To accomplish this analysis, we first pulled data from
+                        the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                    </p>
+                    <p class="text-justify">After assembling the dataset, we used Matplotlib to plot various aspects of
+                        the weather vs. latitude. Factors we looked at included: temperature, cloudiness,
+                        wind speed, and humidity. This site provides the source data and visualizations created
+                        as part of the analysis, as well as explanations and descriptions of any trends and
+                        correlations witnessed.
+                    </p>
+                </article>
+            </div>
+            <div class="col-md-5">
+                <section id="imageNav-area">
+                    <div class="imageNav-content jumbotron">
+                        <h1 class="imageNav-header text-info"> Visualizations</h1>
+                        <hr />
+                        <div id="images">
+                            <a href="max_temp.html">
+                                <img src="/Users/stephaniefaderin/Desktop/GW_Data_Bootcamp/APIs/python_apis/City_Latitudes_vs_Max_Temp.png"
+                                    alt="Latitudes vs. Max Temp" class="imageNav-photo">
+                            </a>
+                            <a href="wind_speed.html">
+                                <img src="/Users/stephaniefaderin/Desktop/GW_Data_Bootcamp/APIs/python_apis/City_Latitudes_vs_Wind_Speed.png"
+                                    alt="Latitudes vs. Wind Speed" class="imageNav-photo">
+                            </a>
+                            <a href="humidity.html">
+                                <img src="/Users/stephaniefaderin/Desktop/GW_Data_Bootcamp/APIs/python_apis/City_Latitudes_vs_Humidity.png"
+                                    alt="Latitudes vs. Humidity" class="imageNav-photo">
+                            </a>
+                            <a href="cloudiness.html">
+                                <img src="/Users/stephaniefaderin/Desktop/GW_Data_Bootcamp/APIs/python_apis/City_Latitudes_vs_Cloudiness.png"
+                                    alt="Latitudes vs. Cloudiness" class="imageNav-photo">
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </div>
+    </section>
+    </div>
+</body>
+</html>
